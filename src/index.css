@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Luckiest Guy", serif;
+
+       
+}
+
+.font-inter {
+    font-family: "Inter", serif;
+}
+
+  
+.animate-dropdown {
+    animation: animates 1s ease-in-out forwards;
+}
+
+@keyframes animates {
+    0% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(5%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.animate-from-middle {
+animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+    from {
+        /* transform: scale(0.5); */
+        opacity: 0;
+    }
+    to {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.animate-fade-up {
+    animation: fade-up 1s ease-out forwards;
+}
+
+@keyframes fade-up-2 {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.animate-fade-up-2 {
+    animation: fade-up 1s ease-out forwards;
+}
+
+@keyframes flyBounce {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(15px);
+  }
+}
+
+.fly-bounce {
+  animation: flyBounce 2s ease-in-out infinite;
+}
+
+/* Base Fade-In Styles */
+.fade-in-from-bottom,
+.fade-in-from-top {
+  opacity: 0;
+  transform: translateY(50px); /* Default is bottom */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When Scrolling Down */
+.fade-in-from-bottom.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When Scrolling Up */
+.fade-in-from-top {
+  transform: translateY(-50px); /* Moves up initially */
+}
+
+.fade-in-from-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,43 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  /* Initial State */
+  .scroll-animate {
+    transform: translateY(50%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  @keyframes scrollDown {
+    from {
+      transform: translateY(50%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scrollUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(50%);
+    }
+  }
+  
+  .scroll-animate.scroll-down {
+    animation: scrollDown 0.8s ease-out forwards;
+  }
+  
+  .scroll-animate.scroll-up {
+    animation: scrollUp 0.8s ease-out forwards;
+  }

@@ -1,0 +1,81 @@
+/* ================== Marque Animation ================  */
+/* Main Container: Ensures content stays within bounds */
+.main-container {
+    width: 100vw;
+    height: 129px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #0f2a6e;
+    border: 8px solid #001446;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Scrolling Wrapper: Contains duplicate content for seamless scrolling */
+  .scrolling-wrapper {
+    display: flex;
+    gap: 8px;
+    width: max-content; /* Ensures content can scroll infinitely */
+    animation: scroll 30s linear infinite; /* Smooth infinite scrolling animation */
+  }
+  
+  /* Content Loop: Wraps items for seamless duplication */
+  .content-loop {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Individual Item Wrapper */
+  .item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Circle Styles */
+  .circle {
+    width: 24px;
+    height: 24px;
+    background-color: #64bbfe;
+    border-radius: 50%;
+  }
+  
+  /* Text Wrapper */
+  .text-wrapper {
+    width: 188px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-wrapper span {
+    color: #64bbfe;
+    font-size: 46.91px;
+    font-family: 'Luckiest Guy', sans-serif;
+    font-weight: 400;
+  }
+  
+  /* Keyframes for the scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+/* ================== Marque Animation end ================  */
+
+
+/* ================== About style ================  */
+
+
+  .stroke {
+    -webkit-text-stroke-width: 6px !important;
+    -webkit-text-stroke-color: #001446 !important;
+  }
+
+/* ================== About style END ================  */
+

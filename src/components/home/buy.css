@@ -1,0 +1,189 @@
+.text-shadow-style {
+   -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: #001446;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+
+.text-shadow-style2 {
+-webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: #001446;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .box-shadow-style{
+    border-radius: 50px;
+border-top: 6px solid #001446;
+border-right: 12px solid #001446;
+border-bottom: 12px solid #001446;
+border-left: 6px solid #001446;
+  }
+
+  .swiper-pagination-bullet {
+    width: 24px !important;
+    height: 24px !important;
+    background: #6dbfff !important;
+    opacity: 1;
+    margin-right:31px !important;
+    transition: all .5s ease !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #64BBFE !important;
+    width: 24px;
+    border-radius: 5px;
+  }
+  
+  /* Optional: Add custom positioning for the pagination */
+  .swiper-pagination {
+    position: absolute !important;
+    bottom: 10% !important;
+    left:  0% !important;
+    text-align: start !important;
+    padding-left: 54px !important;
+  }
+
+ .swiper{
+  max-width: 590px !important;
+  margin:0px !important;
+ }
+  
+ /* @media (max-width:1300px){
+  .swiper-pagination {
+    bottom: 230px !important;
+  }
+ } */
+  @media  (max-width: 1100px){
+    .swiper-pagination{
+      padding-left: 40px !important;
+    }
+    .swiper-pagination-bullet{
+        /* height: 80%; */
+        width: 14px !important;
+    height: 14px !important;
+    margin-right:18px !important;
+      }
+  }
+ 
+@media (max-width: 1200px) {
+  .text-shadow-style{
+    -webkit-text-stroke-width: 4px;
+
+  }
+  .box-shadow-style{
+    border-radius: 35px;
+border-top: 4px solid #001446;
+border-right: 8px solid #001446;
+border-bottom: 8px solid #001446;
+border-left: 4px solid #001446;
+
+  }
+ 
+}
+
+  @media (max-width: 1024px) {
+    .text-shadow-style{
+      -webkit-text-stroke-width: 4px;
+
+    }
+    .box-shadow-style{
+      border-radius: 25px;
+border-top: 3px solid #001446;
+border-right: 6px solid #001446;
+border-bottom: 6px solid #001446;
+border-left: 3px solid #001446;
+
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px)  {
+   
+  }
+@media (max-width: 768px) {
+  .text-shadow-style{
+    -webkit-text-stroke-width: 2px;
+    
+  }
+  .box-shadow-style{
+    border-radius: 15.917px;
+border-top: 1.91px solid #001446;
+border-right: 3.82px solid #001446;
+border-bottom: 3.82px solid #001446;
+border-left: 1.91px solid #001446;
+
+  }
+  .swiper{
+    max-width: 100% !important;
+   }
+}
+
+@media (max-width:500px){
+  .suiImg2{
+    max-height: 220px;
+    margin-right:20px
+  }
+  .colorDiv{
+    left: -120px;
+  }
+}
+
+@media (max-width: 400px){
+  .suiText{
+    font-size: 24px;
+  }
+  .suiImg{
+    max-height: 240px;
+  }
+  .suiImg2{
+    max-height: 170px;
+    margin-right:20px
+  }
+  .suiText2{
+    max-width: 16ch;
+    font-size: 14px;
+  }
+  .colorDiv{
+    left:-109px;
+  }
+  .animeStyle2{
+    margin-top: 20%;
+    max-height: 240px;
+  }
+}
+
+.footerMagic {
+  transform: translate(50%, 50%); /* Start at bottom-right */
+  opacity: 0; /* Initially invisible */
+  transition: transform 1s ease-in, opacity 0.3s ease; /* Smooth fallback animation */
+}
+
+.footerMagic.animate {
+  animation: magicRocket 1s ease-in forwards; /* Apply animation */
+  opacity: 1; /* Make visible */
+}
+
+@keyframes magicRocket {
+  0% {
+    transform: translate(50%, 50%); /* Start at bottom-right */
+  }
+  100% {
+    transform: translate(0, 0); /* Move to final position */
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(-1%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+  50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+.animate-bounces {
+  animation: bounce 1s ease  0s infinite none;
+}
