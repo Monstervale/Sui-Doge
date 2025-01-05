@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./FadeIn.css"; // Add the CSS for animations
+import "./fadein.css"; // Add the CSS for animations
 
 const FadeIn = ({ children, className = "" }) => {
   const ref = useRef(null);
