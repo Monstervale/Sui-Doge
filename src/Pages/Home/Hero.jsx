@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import heroImg from "../../assets/img/navbar/hero-img.png";
 import tokenBg from "../../assets/img/navbar/buy-token-bg.svg";
-import "../../Components/home/buy.css";
+import "../../components/home/buy.css";
 import FadeIn from './FadeIn';
 
 const Hero = () => {
